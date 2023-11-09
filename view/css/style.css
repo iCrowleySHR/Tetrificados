@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    overflow-y: hidden;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 25px;
+
+}
+h1{
+    font-size: 50px;
+    color: bisque;
+}
+.scroll{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50em;
+    direction: rtl;
+    overflow-y: scroll;
+}
+.scroll::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+    border-radius: 20px;
+}
+  
+.scroll::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */ 
+  }
+.scroll > button{
+    background-color: red;
+    border: none;
+    padding: 20px 30px 20px 30px;
+    margin: 10px;
+    font-size: 25px;
+    border-radius: 25px;
+    color: white;
+}
+.infos-img{
+    display: flex;
+    flex-direction: column;
+}
+.img-tetris{
+    background-color: aqua;
+    width: 750px;
+    height: 400px;
+    border-radius: 15px;
+}
+.descricao{
+    margin-top: 25px;
+    border-radius: 15px;
+    background-color: red;
+    width: 750px;
+    height: 125px;
+}
