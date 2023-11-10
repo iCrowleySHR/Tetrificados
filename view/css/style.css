@@ -17,7 +17,7 @@ h1{
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 50em;
+    height: 35em;
     direction: rtl;
     overflow-y: scroll;
 }
@@ -37,7 +37,7 @@ h1{
 .scroll > button{
     background-color: red;
     border: none;
-    padding: 20px 30px 20px 30px;
+    padding: 10px 30px 10px 30px;
     margin: 10px;
     font-size: 25px;
     border-radius: 25px;
@@ -50,8 +50,10 @@ h1{
 .img-tetris{
     background-color: aqua;
     width: 750px;
-    height: 400px;
+    height: 405px;
     border-radius: 15px;
+    margin-left: 100px;
+    margin-top: 115px;
 }
 .descricao{
     margin-top: 25px;
@@ -59,4 +61,6 @@ h1{
     background-color: red;
     width: 750px;
     height: 125px;
+    margin-left: 100px;
+    
 }
