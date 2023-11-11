@@ -9,7 +9,7 @@ main{
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 25px;
+    margin: 25px auto;
     width: auto;
 }
 aside{
@@ -51,12 +51,17 @@ aside{
     background-color: red;
     border: none;
     width: auto;
-    padding: 20px 30px 20px 30px;
+    transition: 200ms linear;
     margin: 10px;
     font-size: 25px;
-    border-radius: 25px;
+    border-radius: 15px;
     color: white;
+    padding: 10px 15px 10px 15px;
     
+}
+.scroll > button:hover{
+    padding: 22px 31px 22px 31px;
+    cursor: pointer;
 }
 
 .gradiente{
@@ -64,6 +69,7 @@ aside{
     margin-top: -210px;
     margin-right: 40px;
     background: rgb(0,0,0);
+    pointer-events: none; /*Os eventos do cursor funciona mesmo com uma div em cima*/
     background: linear-gradient(0deg, rgba(0,0,0,1) 23%, rgba(92,9,121,0) 97%);
 }
 .infos-img{
@@ -84,7 +90,12 @@ aside{
     height: 100%;
     border-radius: 15px;
     margin-left: 20px;
-    margin-top: 115px;
+    margin-top: 135px;
+}
+.img-tetris > img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: white 3px 3px;
 }
 .descricao{
     display: flex;
@@ -106,4 +117,9 @@ footer{
     text-align: center;
     padding: 10px 0 10px;
     bottom: 0px;
+    font-weight: 700;
+}
+
+.teste{
+    background-color: aqua;
 }
