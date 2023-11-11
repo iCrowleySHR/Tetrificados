@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     background-color: black;
     overflow-y: hidden;
     margin: 0;
     padding: 0;
+}
+*{
+    font-family: 'Raleway', sans-serif;
 }
 main{
     display: flex;
@@ -20,8 +24,8 @@ aside{
     flex-direction: column;
 }
 .logo{
-    width: 400px;
-    margin: 10px;
+    width: 300px;
+    margin-left: 55px;
 }
 .scroll{
 
@@ -90,14 +94,14 @@ aside{
     height: 100%;
     border-radius: 15px;
     margin-left: 20px;
-    margin-top: 135px;
+    margin-top: 90px;
 }
 .img-tetris > img{
     width: 100%;
     border-radius: 15px;
     box-shadow: white 3px 3px;
 }
-.descricao{
+.texto-jogos{
     display: flex;
     margin-top: 25px;
     border-radius: 15px;
@@ -107,7 +111,15 @@ aside{
     max-height: 125px;
     height: 100%;
     margin-left: 20px;
-   
+    flex-direction: column;
+}
+.texto-jogos > h2{
+    margin: 20px 0 5px 0;
+    margin-left: 10px;
+}
+.texto-jogos > p{
+    margin-top: -5px;
+    margin-left: 10px;
 }
 
 footer{
