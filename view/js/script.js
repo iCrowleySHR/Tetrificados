@@ -2,36 +2,19 @@ document.addEventListener('DOMContentLoaded', function () {
     let imgPrincipal = document.querySelector('.imgPrincipal')
     let titleJogos = document.querySelector('.title-jogos')
     let descJogos = document.querySelector('.desc-jogos')
+    let selectSound = document.querySelector('#select-sound')
 
     // Buttons
-    let battleTetris = document.querySelector('.battle-tetris')
-    let onePiece = document.querySelector('.one-piece')
-    let bobEsponja = document.querySelector('.bob-esponja')
-    let windowsXP = document.querySelector('.windows-xp')
-    let retro = document.querySelector('.retro')
-    let mario = document.querySelector('.mario')
-    let barbie = document.querySelector('.barbie')
-
-    const scrollContainer = document.querySelector(".scroll");
-
-    // Função para clonar e adicionar elementos infinitamente
-    function addElementsInfinitely() {
-      const buttons = scrollContainer.querySelectorAll("button");
-      buttons.forEach((button) => {
-        const clone = button.cloneNode(true);
-        scrollContainer.appendChild(clone);
-      });
-    }
-
-       // Adicione um evento de rolagem para chamar a função quando necessário
-       scrollContainer.addEventListener("scroll", function () {
-        if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight) {
-          addElementsInfinitely();
-        }
-      });
-  
-      // Chame a função inicialmente para preencher a tela
-      addElementsInfinitely();
+    const battleTetris = document.querySelector('.battle-tetris')
+    const onePiece = document.querySelector('.one-piece')
+    const bobEsponja = document.querySelector('.bob-esponja')
+    const windowsXP = document.querySelector('.windows-xp')
+    const retro = document.querySelector('.retro')
+    const mario = document.querySelector('.mario')
+    const naruto = document.querySelector('.naruto')
+    const mcqueen = document.querySelector('.mcqueen')
+    const barbie = document.querySelector('.barbie')
+    const buttons = document.querySelectorAll('button');
 
 
     let informacoes = {
@@ -46,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "descOnePieceTetris" : "Feito por Nicole, Maria Clara e Raissa",
 
         // Bob Esponja Tetris
-        "imgOnePiece": "./view/img/battle-tetris.png",
+        "imgBobEsponja": "./view/img/battle-tetris.png",
         "titleBobEsponjaTetris" : "Bob Esponja Tetris",
         "descBobEsponjaTetris" : "Feito por Ana Gabrielly, Maria Luisa, Leandro, Luiza e fabiola",
 
@@ -81,72 +64,72 @@ document.addEventListener('DOMContentLoaded', function () {
         "descNarutoTetris" : "Feito por Lara e Silvia",
     }
 
+    function soundSelect(){
+        selectSound.currentTime=0
+        selectSound.play()
+    }
+
+    function botaoSair(){
+        imgPrincipal.removeAttribute('src')
+            titleJogos.innerHTML=``
+            descJogos.innerHTML=``
+    }
+
     battleTetris.addEventListener('mouseenter', ()=>{
         imgPrincipal.setAttribute('src', informacoes.imgBattleTetris)
         titleJogos.innerHTML=`${informacoes.titleBattleTetris}`
         descJogos.innerHTML=`${informacoes.descBattleTetris}`
 
-        battleTetris.addEventListener('mouseleave', ()=>{
-            imgPrincipal.removeAttribute('src')
-            titleJogos.innerHTML=``
-            descJogos.innerHTML=``
-        })
+        soundSelect()
+    })
+
+    onePiece.addEventListener('mouseenter', ()=>{
+        imgPrincipal.setAttribute('src', informacoes.imgOnePiece)
+        soundSelect()
+    })
+
+    bobEsponja.addEventListener('mouseenter', ()=>{
+        imgPrincipal.setAttribute('src', informacoes.imgBobEsponja)
+        soundSelect()
 
     })
-    onePiece.addEventListener('mouseenter', ()=>{
-        let img = informacoes.imgOnePieceTetris
-        imgPrincipal.setAttribute('src', img)
-        onePiece.addEventListener('mouseleave', ()=>{
-            imgPrincipal.removeAttribute('src')
-        })
-    })
-    bobEsponja.addEventListener('mouseenter', ()=>{
-        let img = informacoes.imgBobEsponjaTetris
-        imgPrincipal.setAttribute('src', img)
-        bobEsponja.addEventListener('mouseleave', ()=>{
-            imgPrincipal.removeAttribute('src')
-        })
-    })  
+
     windowsXP.addEventListener('mouseenter', ()=>{
-        let img = informacoes.imgWindowsXPTetris
-        imgPrincipal.setAttribute('src', img)
-        windowsXP.addEventListener('mouseleave', ()=>{
-            imgPrincipal.removeAttribute('src')
-        })
-    })    
-    troll.addEventListener('mouseenter', ()=>{
-        let img = informacoes.imgTrollTetris
-        imgPrincipal.setAttribute('src', img)
-        troll.addEventListener('mouseleave', ()=>{
-            imgPrincipal.removeAttribute('src')
-        })
-    })    
+        imgPrincipal.setAttribute('src', informacoes.imgWindowsXP)
+        soundSelect()
+
+    })
+
     retro.addEventListener('mouseenter', ()=>{
-        let img = informacoes.imgRetroTetris
-        imgPrincipal.setAttribute('src', img)
-        retro.addEventListener('mouseleave', ()=>{
-            imgPrincipal.removeAttribute('src')
-        })
-    }) 
+        imgPrincipal.setAttribute('src', informacoes.imgRetro)
+        soundSelect()
+
+    })
+
     mario.addEventListener('mouseenter', ()=>{
-        let img = informacoes.imgMarioTetris
-        imgPrincipal.setAttribute('src', img)
-        mario.addEventListener('mouseleave', ()=>{
-            imgPrincipal.removeAttribute('src')
-        })
-    }) 
+        imgPrincipal.setAttribute('src', informacoes.imgMario)
+        soundSelect()
+
+    })
+
     barbie.addEventListener('mouseenter', ()=>{
-        let img = informacoes.imgBarbieTetris
-        imgPrincipal.setAttribute('src', img)
-        barbie.addEventListener('mouseleave', ()=>{
-            imgPrincipal.removeAttribute('src')
-        })
-    }) 
+        imgPrincipal.setAttribute('src', informacoes.imgBarbie)
+        soundSelect()
+
+    })
+
     mcqueen.addEventListener('mouseenter', ()=>{
-        let img = informacoes.imgMcQueenTetris
-        imgPrincipal.setAttribute('src', img)
-        mcqueen.addEventListener('mouseleave', ()=>{
-            imgPrincipal.removeAttribute('src')
-        })
-    }) 
+        imgPrincipal.setAttribute('src', informacoes.imgMcQueen)
+        soundSelect()
+        
+    })
+    
+    naruto.addEventListener('mouseenter', ()=>{
+        imgPrincipal.setAttribute('src', informacoes.imgNaruto)
+        soundSelect()
+        
+    })
+    buttons.forEach((button) => {
+        button.addEventListener('mouseleave', botaoSair);
+    });
 })
