@@ -2,20 +2,18 @@ document.addEventListener('DOMContentLoaded', function () {
     let imgPrincipal = document.querySelector('.imgPrincipal')
     let titleJogos = document.querySelector('.title-jogos')
     let descJogos = document.querySelector('.desc-jogos')
-    let selectSound = document.querySelector('#select-sound')
+    const selectSound = document.querySelector('#select-sound')
 
     // Buttons
-    const battleTetris = document.querySelector('.battle-tetris')
-    const onePiece = document.querySelector('.one-piece')
-    const bobEsponja = document.querySelector('.bob-esponja')
-    const windowsXP = document.querySelector('.windows-xp')
-    const retro = document.querySelector('.retro')
-    const mario = document.querySelector('.mario')
-    const naruto = document.querySelector('.naruto')
-    const mcqueen = document.querySelector('.mcqueen')
-    const barbie = document.querySelector('.barbie')
-    const buttons = document.querySelectorAll('button');
-
+    const battleTetris = document.querySelectorAll('.battle-tetris')
+    const onePiece = document.querySelectorAll('.one-piece')
+    const bobEsponja = document.querySelectorAll('.bob-esponja')
+    const windowsXP = document.querySelectorAll('.windows-xp')
+    const retro = document.querySelectorAll('.retro')
+    const mario = document.querySelectorAll('.mario')
+    const naruto = document.querySelectorAll('.naruto')
+    const mcqueen = document.querySelectorAll('.mcqueen')
+    const barbie = document.querySelectorAll('.barbie')
 
     let informacoes = {
         /*Battle Tetris*/
@@ -67,6 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function soundSelect(){
         selectSound.currentTime=0
         selectSound.play()
+        console.log('Tentando reproduzir som');
     }
 
     function botaoSair(){
@@ -75,61 +74,105 @@ document.addEventListener('DOMContentLoaded', function () {
             descJogos.innerHTML=``
     }
 
-    battleTetris.addEventListener('mouseenter', ()=>{
-        imgPrincipal.setAttribute('src', informacoes.imgBattleTetris)
-        titleJogos.innerHTML=`${informacoes.titleBattleTetris}`
-        descJogos.innerHTML=`${informacoes.descBattleTetris}`
-
-        soundSelect()
-    })
-
-    onePiece.addEventListener('mouseenter', ()=>{
-        imgPrincipal.setAttribute('src', informacoes.imgOnePiece)
-        soundSelect()
-    })
-
-    bobEsponja.addEventListener('mouseenter', ()=>{
-        imgPrincipal.setAttribute('src', informacoes.imgBobEsponja)
-        soundSelect()
-
-    })
-
-    windowsXP.addEventListener('mouseenter', ()=>{
-        imgPrincipal.setAttribute('src', informacoes.imgWindowsXP)
-        soundSelect()
-
-    })
-
-    retro.addEventListener('mouseenter', ()=>{
-        imgPrincipal.setAttribute('src', informacoes.imgRetro)
-        soundSelect()
-
-    })
-
-    mario.addEventListener('mouseenter', ()=>{
-        imgPrincipal.setAttribute('src', informacoes.imgMario)
-        soundSelect()
-
-    })
-
-    barbie.addEventListener('mouseenter', ()=>{
-        imgPrincipal.setAttribute('src', informacoes.imgBarbie)
-        soundSelect()
-
-    })
-
-    mcqueen.addEventListener('mouseenter', ()=>{
-        imgPrincipal.setAttribute('src', informacoes.imgMcQueen)
-        soundSelect()
-        
+    battleTetris.forEach(element =>{
+        element.addEventListener('mouseenter', ()=>{
+            imgPrincipal.setAttribute('src', informacoes.imgBattleTetris)
+            titleJogos.innerHTML=`${informacoes.titleBattleTetris}`
+            descJogos.innerHTML=`${informacoes.descBattleTetris}`
+            soundSelect()
+            
+        })
+        element.addEventListener('mouseleave',()=>{
+            botaoSair()
+        })
     })
     
-    naruto.addEventListener('mouseenter', ()=>{
-        imgPrincipal.setAttribute('src', informacoes.imgNaruto)
-        soundSelect()
-        
+    onePiece.forEach(element=>{
+        element.addEventListener('mouseenter', ()=>{
+            imgPrincipal.setAttribute('src', informacoes.imgOnePiece)
+            soundSelect()
+        })
+        element.addEventListener('mouseleave',()=>{
+            botaoSair()
+        })
     })
-    buttons.forEach((button) => {
-        button.addEventListener('mouseleave', botaoSair);
-    });
+    
+    bobEsponja.forEach(element =>{
+        element.addEventListener('mouseenter', ()=>{
+            imgPrincipal.setAttribute('src', informacoes.imgBobEsponja)
+            soundSelect()
+    
+        })
+        element.addEventListener('mouseleave',()=>{
+            botaoSair()
+        })
+    })
+    
+
+    windowsXP.forEach(element =>{
+        element.addEventListener('mouseenter', ()=>{
+            imgPrincipal.setAttribute('src', informacoes.imgWindowsXP)
+            soundSelect()
+    
+        })
+        element.addEventListener('mouseleave',()=>{
+            botaoSair()
+        })
+    })
+    
+    retro.forEach(element =>{
+        element.addEventListener('mouseenter', ()=>{
+            imgPrincipal.setAttribute('src', informacoes.imgRetro)
+            soundSelect()
+    
+        }) 
+        element.addEventListener('mouseleave',()=>{
+            botaoSair()
+        })
+    })
+    
+    mario.forEach(element =>{
+        element.addEventListener('mouseenter', ()=>{
+            imgPrincipal.setAttribute('src', informacoes.imgMario)
+            soundSelect()
+    
+        })
+        element.addEventListener('mouseleave',()=>{
+            botaoSair()
+        })
+    })
+    
+    barbie.forEach(element =>{
+        element.addEventListener('mouseenter', ()=>{
+            imgPrincipal.setAttribute('src', informacoes.imgBarbie)
+            soundSelect()
+    
+        })
+        element.addEventListener('mouseleave',()=>{
+            botaoSair()
+        })
+    })
+    
+    mcqueen.forEach(element =>{
+        element.addEventListener('mouseenter', ()=>{
+            imgPrincipal.setAttribute('src', informacoes.imgMcQueen)
+            soundSelect()
+            
+        })
+        element.addEventListener('mouseleave',()=>{
+            botaoSair()
+        })
+    })
+
+    naruto.forEach(element =>{
+        element.addEventListener('mouseenter', ()=>{
+            imgPrincipal.setAttribute('src', informacoes.imgNaruto)
+            soundSelect()
+            
+        })
+        element.addEventListener('mouseleave',()=>{
+            botaoSair()
+        })
+    })
+    
 })
