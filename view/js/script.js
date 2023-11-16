@@ -1,65 +1,79 @@
 document.addEventListener('DOMContentLoaded', function () {
-    let imgPrincipal = document.querySelector('.imgPrincipal')
-    let titleJogos = document.querySelector('.title-jogos')
-    let descJogos = document.querySelector('.desc-jogos')
-    const selectSound = document.querySelector('#select-sound')
 
-    // Buttons
-    const battleTetris = document.querySelectorAll('.battle-tetris')
-    const onePiece = document.querySelectorAll('.one-piece')
-    const bobEsponja = document.querySelectorAll('.bob-esponja')
-    const windowsXP = document.querySelectorAll('.windows-xp')
-    const retro = document.querySelectorAll('.retro')
-    const mario = document.querySelectorAll('.mario')
-    const naruto = document.querySelectorAll('.naruto')
-    const mcqueen = document.querySelectorAll('.mcqueen')
-    const barbie = document.querySelectorAll('.barbie')
+    // Itens dos projetos
+    let imgPrincipal = document.querySelector('.imgPrincipal');
+    let titleJogos = document.querySelector('.title-jogos');
+    let descJogos = document.querySelector('.desc-jogos');
+    const selectSound = document.querySelector('#select-sound');
+    
+    // Button
+    const buttons = document.querySelectorAll('.btn-open');
+    
+    // Objeto contendo todos os projetos
+    const projetos = {
 
-    let informacoes = {
-        /*Battle Tetris*/
-        "imgBattleTetris": "./view/img/battle-tetris.png",
-        "titleBattleTetris" : "Battle Tetris",
-        "descBattleTetris" : "Feito por Gustavo Gualda, João Paulo e João Luiz",
-
+        // Battle Tetris
+        'btn-1': {
+            img: "view/img/battle-tetris.png",
+            title: "Battle Tetris",
+            description: "<strong>Feito por:</strong> Gustavo Gualda, João Paulo e João Luiz"
+        },
+        
         // One piece tetris
-        "imgOnePiece": "./view/img/battle-tetris.png",
-        "titleOnePieceTetris" : "One Piece Tetris",
-        "descOnePieceTetris" : "Feito por Nicole, Maria Clara e Raissa",
+        'btn-2': {
+            img: "view/img/battle-tetris.png",
+            title: "One Piece Tetris",
+            description: "<strong>Feito por:</strong> Nicole, Maria Clara e Raissa"
+        },
 
         // Bob Esponja Tetris
-        "imgBobEsponja": "./view/img/battle-tetris.png",
-        "titleBobEsponjaTetris" : "Bob Esponja Tetris",
-        "descBobEsponjaTetris" : "Feito por Ana Gabrielly, Maria Luisa, Leandro, Luiza e fabiola",
+        'btn-3': {
+            img: "view/img/battle-tetris.png",
+            title: "Bob Esponja Tetris",
+            description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e fabiola"
+        },
 
         // Windows XP Tetris 
-        "imgWindowsXP": "./view/img/battle-tetris.png",
-        "titleWindowsXPTetris" : "Windows XP Tetris ",
-        "descWindowsXPTetris" : "Feito por Miguel, Matheus e Pedro",
-
+        'btn-4': {
+            img: "view/img/battle-tetris.png",
+            title: "Windows XP Tetris",
+            description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro"
+        },
+        
         // Retrô Tetris 
-        "imgRetro": "./view/img/battle-tetris.png",
-        "titleRetroTetris" : "Retrô Tetris",
-        "descRetroTetris" : "Feito por Gustavo Lima, Gustavo Sachetto, Kaue e Erick",
+        'btn-5': {
+            img: "view/img/battle-tetris.png",
+            title: "Retrô Tetris",
+            description: "<strong>Feito por:</strong> Gustavo Lima, Gustavo Sachetto, Kaue e Erick"
+        },
 
-        // Mario Tetris 
-        "imgMario": "./view/img/battle-tetris.png",
-        "titleMarioTetris" : "Mario Tetris",
-        "descMarioTetris" : "Feito por Myrela, Nicoli, Leonardo e Patrick",
+        // Mario Tetris
+        'btn-6': {
+            img: "view/img/battle-tetris.png",
+            title: "Mario Tetris",
+            description: "<strong>Feito por:</strong> Myrela, Nicoli, Leonardo e Patrick"
+        },
 
-        // Barbie Tetris 
-        "imgBarbie": "./view/img/battle-tetris.png",
-        "titleBarbieTetris" : "Barbie Tetris",
-        "descBarbieTetris" : "Feito por Gisele, Brenda, Kauany e Kírya",
-
+        // Barbie Tetris
+        'btn-7': {
+            img: "view/img/battle-tetris.png",
+            title: "Barbie Tetris",
+            description: "<strong>Feito por:</strong> Gisele, Brenda, Kauany e Kírya"
+        },
+        
         // McQueen Tetris 
-        "imgMcQueen": "./view/img/battle-tetris.png",
-        "titleMcQueenTetris" : "McQueen Tetris",
-        "descMcQueenTetris" : "Feito por Júlio, Sales, Jhonatas e Ana Júlia",
-
+        'btn-8': {
+            img: "view/img/battle-tetris.png",
+            title: "McQueen Tetris",
+            description: "<strong>Feito por:</strong> Júlio, Sales, Jhonatas e Ana Júlia"
+        },
+        
         // Naruto Tetris 
-        "imgNaruto": "./view/img/battle-tetris.png",
-        "titleNarutoTetris" : "Naruto Tetris",
-        "descNarutoTetris" : "Feito por Lara e Silvia",
+        'btn-9': {
+            img: "view/img/battle-tetris.png",
+            title: "Naruto Tetris",
+            description: "<strong>Feito por:</strong> Lara e Silvia"
+        },
     }
 
     function soundSelect(){
@@ -74,105 +88,12 @@ document.addEventListener('DOMContentLoaded', function () {
             descJogos.innerHTML=``
     }
 
-    battleTetris.forEach(element =>{
-        element.addEventListener('mouseenter', ()=>{
-            imgPrincipal.setAttribute('src', informacoes.imgBattleTetris)
-            titleJogos.innerHTML=`${informacoes.titleBattleTetris}`
-            descJogos.innerHTML=`${informacoes.descBattleTetris}`
-            soundSelect()
-            
-        })
-        element.addEventListener('mouseleave',()=>{
-            botaoSair()
-        })
-    })
-    
-    onePiece.forEach(element=>{
-        element.addEventListener('mouseenter', ()=>{
-            imgPrincipal.setAttribute('src', informacoes.imgOnePiece)
-            soundSelect()
-        })
-        element.addEventListener('mouseleave',()=>{
-            botaoSair()
-        })
-    })
-    
-    bobEsponja.forEach(element =>{
-        element.addEventListener('mouseenter', ()=>{
-            imgPrincipal.setAttribute('src', informacoes.imgBobEsponja)
-            soundSelect()
-    
-        })
-        element.addEventListener('mouseleave',()=>{
-            botaoSair()
-        })
-    })
-    
-
-    windowsXP.forEach(element =>{
-        element.addEventListener('mouseenter', ()=>{
-            imgPrincipal.setAttribute('src', informacoes.imgWindowsXP)
-            soundSelect()
-    
-        })
-        element.addEventListener('mouseleave',()=>{
-            botaoSair()
-        })
-    })
-    
-    retro.forEach(element =>{
-        element.addEventListener('mouseenter', ()=>{
-            imgPrincipal.setAttribute('src', informacoes.imgRetro)
-            soundSelect()
-    
-        }) 
-        element.addEventListener('mouseleave',()=>{
-            botaoSair()
-        })
-    })
-    
-    mario.forEach(element =>{
-        element.addEventListener('mouseenter', ()=>{
-            imgPrincipal.setAttribute('src', informacoes.imgMario)
-            soundSelect()
-    
-        })
-        element.addEventListener('mouseleave',()=>{
-            botaoSair()
-        })
-    })
-    
-    barbie.forEach(element =>{
-        element.addEventListener('mouseenter', ()=>{
-            imgPrincipal.setAttribute('src', informacoes.imgBarbie)
-            soundSelect()
-    
-        })
-        element.addEventListener('mouseleave',()=>{
-            botaoSair()
-        })
-    })
-    
-    mcqueen.forEach(element =>{
-        element.addEventListener('mouseenter', ()=>{
-            imgPrincipal.setAttribute('src', informacoes.imgMcQueen)
-            soundSelect()
-            
-        })
-        element.addEventListener('mouseleave',()=>{
-            botaoSair()
-        })
-    })
-
-    naruto.forEach(element =>{
-        element.addEventListener('mouseenter', ()=>{
-            imgPrincipal.setAttribute('src', informacoes.imgNaruto)
-            soundSelect()
-            
-        })
-        element.addEventListener('mouseleave',()=>{
-            botaoSair()
-        })
-    })
-    
-})
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', () => {
+            imgPrincipal.src = projetos[button.id]['img'];
+            titleJogos.innerHTML = projetos[button.id]['title'];
+            descJogos.innerHTML = projetos[button.id]['description'];
+            soundSelect();
+        });
+    });
+});
