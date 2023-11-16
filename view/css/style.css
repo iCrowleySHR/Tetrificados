@@ -42,7 +42,9 @@ aside {
     max-width: 400px;
     width: 100%;
     height: 40em;
+    max-height: 80vh;
     margin-left: 10px;
+    margin-bottom: 50px;
     direction: rtl;
     overflow-y: scroll;
 }
@@ -69,18 +71,20 @@ aside {
     background-color: red;
     border: none;
     width: auto;
-    transition: 200ms linear;
-    margin: 10px;
-    font-size: 25px;
+    margin: 15px 10px;
+    font-size: 26px;
     border-radius: 15px;
     color: white;
-    padding: 10px 15px 10px 15px;
+    padding: 15px 20px;
     text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 100ms linear;
 }
 
-.scroll>a:hover {
-    padding: 22px 31px 22px 31px;
-    cursor: pointer;
+.scroll:hover :not(:hover) {
+    opacity: 30%;
+    transform: scale(0.95);
 }
 
 .gradiente {
@@ -105,7 +109,7 @@ aside {
 
 .img-tetris {
     display: flex;
-    background-color: aqua;
+    background-color: gray;
     max-width: 750px;
     width: 100%;
     max-height: 390px;
@@ -118,12 +122,13 @@ aside {
 .img-tetris>img {
     width: 100%;
     border-radius: 15px;
-    box-shadow: white 3px 3px;
+    box-shadow: 2px 2px 6px #ffffffbd;
 }
 
 .texto-jogos {
     display: flex;
     margin-top: 25px;
+    margin-left: 20px;
     border-radius: 15px;
     background-color: red;
     max-width: 750px;
@@ -131,17 +136,19 @@ aside {
     max-height: 125px;
     color: white;
     height: 100%;
-    margin-left: 20px;
+    padding: 5px;
     flex-direction: column;
 }
 
 .texto-jogos>h2 {
+    font-size: 32px;
     margin: 20px 0 5px 0;
     margin-left: 10px;
 }
 
 .texto-jogos>p {
-    margin-top: -5px;
+    font-size: 19px;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
@@ -150,20 +157,18 @@ aside {
     position: absolute;
 }
 
-footer > p {
-    background-color: white;
-    position: absolute;
+footer {
     width: 100%;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+}
+
+footer>p {
     text-align: center;
-    padding: 10px 0 10px;
-    bottom: 0px;
     font-weight: 700;
 }
 
 footer a {
     color: black;
-}
-
-.teste {
-    background-color: aqua;
 }
