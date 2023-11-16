@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let titleJogos = document.querySelector('.title-jogos');
     let descJogos = document.querySelector('.desc-jogos');
     const selectSound = document.querySelector('#select-sound');
-    
+    let main = document.querySelector('main');
+    let btnJogar = document.querySelector('.btn-jogar');
+
     // Button
     const buttons = document.querySelectorAll('.btn-open');
     
@@ -30,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'btn-3': {
             img: "view/img/tetris-bobesponja.png",
             title: "Bob Esponja Tetris",
-            description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e fabiola"
+            description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e Fabiola"
         },
 
         // Windows XP Tetris 
@@ -76,16 +78,18 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     }
 
+    btnJogar.addEventListener('click',()=>{
+        console.log('oi')
+        let primeiraPagina = document.querySelector('.primeiraPagina')
+        primeiraPagina.style.display='none'
+        main.style.display='flex'
+    })
+
+
     function soundSelect(){
         selectSound.currentTime=0
         selectSound.play()
         console.log('Tentando reproduzir som');
-    }
-
-    function botaoSair(){
-        imgPrincipal.removeAttribute('src')
-            titleJogos.innerHTML=``
-            descJogos.innerHTML=``
     }
 
     buttons.forEach(button => {

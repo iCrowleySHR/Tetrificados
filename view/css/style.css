@@ -7,7 +7,25 @@ body {
     background-image: url(../img/background.gif);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
+
+}
+
+.primeiraPagina{
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.primeiraPagina > img{
+    max-width: 550px;
+    width: 100%;
+}
+
+.primeiraPagina > button{
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
 }
 
 * {
@@ -15,7 +33,7 @@ body {
 }
 
 main {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
