@@ -48,7 +48,7 @@
         var largeStroke = 8;
         var smallStroke = 2;
         var quantBloco = 8;
-        var criadoX = 170;
+        var criadoX = 45;
         var criadoY = 600;
         var clickIniciar = '#53aaf1';
         var clickGameOver = 'red';
@@ -363,7 +363,7 @@
             
             g.font = smallFont;
             g.fillStyle = "black";
-            g.fillText('Criado por: Gustavo Sachetto.', criadoX, criadoY);              
+            g.fillText('Criado por: Gustavo Sachetto, Erick, Kaue, Gustavo Lima.', criadoX, criadoY);              
         }
 
         function drawStartScreen() {
@@ -376,7 +376,7 @@
             
             g.font = smallFont;
             g.fillStyle = "black";
-            g.fillText('Criado por: Gustavo Sachetto.', criadoX, criadoY);
+            g.fillText('Criado por: Gustavo Sachetto, Erick, Kaue, Gustavo Lima.', criadoX, criadoY);
         }
 
         function fillRect(r, color) {

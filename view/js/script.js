@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Bob Esponja Tetris
         'btn-3': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/tetris-bobesponja.png",
             title: "Bob Esponja Tetris",
             description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e fabiola"
         },
@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro"
         },
         
-        // Retrô Tetris 
+        // Food Tetris
         'btn-5': {
-            img: "view/img/battle-tetris.png",
-            title: "Retrô Tetris",
-            description: "<strong>Feito por:</strong> Gustavo Lima, Gustavo Sachetto, Kaue e Erick"
+            img: "view/img/food-tetris.png",
+            title: "Food Tetris",
+            description: "<strong>Feito por:</strong> Gustavo Sachetto, Gustavo Lima, Kaue e Erick"
         },
 
         // Mario Tetris
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // Naruto Tetris 
         'btn-9': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/tetris-naruto.png",
             title: "Naruto Tetris",
             description: "<strong>Feito por:</strong> Lara e Silvia"
         },
