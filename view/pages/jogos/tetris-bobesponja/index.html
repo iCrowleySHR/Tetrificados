@@ -1,0 +1,96 @@
+
+
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PAGINA INICIAL</title>
+</head>
+<style type="text/css">
+
+    body {
+        background-image: url(img/fundoIndex.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Bob esponja', Verdana, sans-serif;
+
+    }
+
+    font {
+        color: white;
+        font-size: 50px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    @font-face {
+        font-family: 'Bob esponja'; /* Nome que você deseja dar à sua fonte */
+        src: url('Spongeboy Me Bob.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+        /* Adicione outros formatos de fonte (eot, woff, woff2, etc.) para garantir suporte em diferentes navegadores */
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Permite que as imagens vão para a linha seguinte se não houver espaço suficiente */
+        gap: 20px; /* Espaçamento entre as imagens */
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        width: 250px;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        cursor: pointer;
+
+    }
+
+    .image:hover {
+        opacity: 0.8;
+    }
+
+    .text {
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+    }
+    .tudo {
+     width: 100%;
+    }
+</style>
+
+<body>
+	<div class="tudo">
+    <img src="img/logoBob.png" width="230px" class="logo"><br>
+    <center>
+        <br><br><br><br><br><br>
+        <font><b>ESCOLHA UM TEMA:</b></font><br>
+        <div class="container">
+            <a href="TetrisBob.html">
+                <img src="img/bob.png" alt="Bob esponja" class="image">
+            </a>
+            <a href="TetrisPatrick.html">
+                <img src="img/patrick.png" alt="Patrick" class="image">
+            </a>
+            <a href="Tetris.html">
+                <img src="img/turmaToda.png" alt="turmaToda" class="image">
+            </a>
+        </div>
+    </center>
+</div>
+</body>
+
+</html>
