@@ -86,9 +86,8 @@ aside {
 }
 
 .scroll>a {
-    background-color: red;
     border: none;
-    width: auto;
+    width: 90%;
     margin: 15px 10px;
     font-size: 26px;
     border-radius: 15px;
@@ -114,6 +113,159 @@ aside {
     pointer-events: none;
     /*Os eventos do cursor funciona mesmo com uma div em cima*/
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 23%, rgba(92, 9, 121, 0) 97%);
+}
+.btn-open {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 0.6em;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em; 
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.btn-open:hover, .btn-open:focus {
+    color: #fff;
+    outline: 0;
+}
+
+#btn-1 {
+    box-shadow: 0 0 10px 0 #5E00D3 inset, 0 0 10px 4px #5E00D3;
+}
+
+#btn-1:hover {
+    border-color: #5E00D3;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #5E00D3 inset, 0 0 0 0 #5E00D3;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-2 {
+    box-shadow: 0 0 10px 0 #FFC300 inset, 0 0 10px 4px #FFC300;
+}
+
+#btn-2:hover {
+    border-color: #D3A100;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #D3A100 inset, 0 0 0 0 #FFC300;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-3 {
+    box-shadow: 0 0 10px 0 #e74c3c inset, 0 0 10px 4px #e74c3c;
+}
+
+#btn-3:hover {
+    border-color: #e74c3c;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #e74c3c inset, 0 0 0 0 #e74c3c;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-4 {
+    box-shadow: 0 0 10px 0 #209CCE inset, 0 0 10px 4px #209CCE;
+}
+
+#btn-4:hover {
+    border-color: #209CCE;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #209CCE inset, 0 0 0 0 #209CCE;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-5 {
+    box-shadow: 0 0 10px 0 #EC4399 inset, 0 0 10px 4px #EC4399;
+}
+
+#btn-5:hover {
+    border-color: #EC4399;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #EC4399 inset, 0 0 0 0 #EC4399;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-6 {
+    box-shadow: 0 0 10px 0 #5ED037 inset, 0 0 10px 4px #5ED037;
+}
+
+#btn-6:hover {
+    border-color: #5ED037;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #5ED037 inset, 0 0 0 0 #5ED037;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-7 {
+    box-shadow: 0 0 10px 0 #1E4DD2 inset, 0 0 10px 4px #1E4DD2;
+}
+
+#btn-7:hover {
+    border-color: #1E4DD2;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #000D97 inset, 0 0 0 0 #000D97;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-8 {
+    box-shadow: 0 0 10px 0 #e72913 inset, 0 0 10px 4px #e72913;
+}
+
+#btn-8:hover {
+    border-color: #e72913;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #e72913 inset, 0 0 0 0 #e72913;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-9 {
+    box-shadow: 0 0 10px 0 #FF8C00 inset, 0 0 10px 4px #FF8C00;
+}
+
+#btn-9:hover {
+    border-color: #FF8C00;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #FF8C00 inset, 0 0 0 0 #FF8C00;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#btn-10 {
+    box-shadow: 0 0 10px 0 #a71693 inset, 0 0 10px 4px #a71693;
+}
+
+#btn-10:hover {
+    border-color: #a71693;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #a71693 inset, 0 0 0 0 #a71693;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .infos-img {

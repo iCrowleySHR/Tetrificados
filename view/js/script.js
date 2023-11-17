@@ -20,47 +20,47 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Battle Tetris",
             description: "<strong>Feito por:</strong> Gustavo Gualda, João Paulo e João Luiz"
         },
-        
-        // One piece tetris
-        'btn-2': {
-            img: "view/img/battle-tetris.png",
-            title: "One Piece Tetris",
-            description: "<strong>Feito por:</strong> Nicole, Maria Clara e Raissa"
-        },
 
-        // Bob Esponja Tetris
-        'btn-3': {
+         // Bob Esponja Tetris
+         'btn-2': {
             img: "view/img/tetris-bobesponja.png",
             title: "Bob Esponja Tetris",
             description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e Fabiola"
         },
 
-        // Windows XP Tetris 
-        'btn-4': {
+        // Mario Tetris
+        'btn-3': {
             img: "view/img/battle-tetris.png",
-            title: "Windows XP Tetris",
-            description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro"
+            title: "Mario Tetris",
+            description: "<strong>Feito por:</strong> Myrela, Nicoli, Leonardo e Patrick"
         },
         
-        // Food Tetris
+        // One piece tetris
+        'btn-4': {
+            img: "view/img/battle-tetris.png",
+            title: "One Piece Tetris",
+            description: "<strong>Feito por:</strong> Nicole, Maria Clara e Raissa"
+        },
+
+        // Barbie Tetris
         'btn-5': {
+            img: "view/img/battle-tetris.png",
+            title: "Barbie Tetris",
+            description: "<strong>Feito por:</strong> Gisele, Brenda, Kauany e Kírya"
+        },
+
+        // Food Tetris
+        'btn-6': {
             img: "view/img/food-tetris.png",
             title: "Food Tetris",
             description: "<strong>Feito por:</strong> Gustavo Sachetto, Gustavo Lima, Kaue e Erick"
         },
 
-        // Mario Tetris
-        'btn-6': {
-            img: "view/img/battle-tetris.png",
-            title: "Mario Tetris",
-            description: "<strong>Feito por:</strong> Myrela, Nicoli, Leonardo e Patrick"
-        },
-
-        // Barbie Tetris
+        // Windows XP Tetris 
         'btn-7': {
             img: "view/img/battle-tetris.png",
-            title: "Barbie Tetris",
-            description: "<strong>Feito por:</strong> Gisele, Brenda, Kauany e Kírya"
+            title: "Windows XP Tetris",
+            description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro"
         },
         
         // McQueen Tetris 
@@ -75,6 +75,13 @@ document.addEventListener('DOMContentLoaded', function () {
             img: "view/img/tetris-naruto.png",
             title: "Naruto Tetris",
             description: "<strong>Feito por:</strong> Lara e Silvia"
+        },
+
+         // Tetris Troll
+         'btn-10': {
+            img: "view/img/battle-tetris.png",
+            title: "Tetris Troll",
+            description: "<strong>Feito por:</strong> Lucas, Richard e Ryan"
         },
     }
 
