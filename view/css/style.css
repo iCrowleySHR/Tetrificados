@@ -112,7 +112,7 @@ aside {
     background: rgb(0, 0, 0);
     pointer-events: none;
     /*Os eventos do cursor funciona mesmo com uma div em cima*/
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 23%, rgba(92, 9, 121, 0) 97%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 23%, rgba(114, 35, 143, 0) 68%);
 }
 .btn-open {
     box-sizing: border-box;
@@ -323,7 +323,52 @@ aside {
     margin-left: 10px;
 }
 
-#select-sound {
+#mario-sound{
+    visibility: hidden;
+    position: absolute;
+}
+
+#barbie-sound{
+    visibility: hidden;
+    position: absolute;
+}
+
+#bob-sound{
+    visibility: hidden;
+    position: absolute;
+}
+
+#one-piece-sound{
+    visibility: hidden;
+    position: absolute;
+}
+
+#windows-xp-sound{
+    visibility: hidden;
+    position: absolute;
+}
+
+#naruto-sound{
+    visibility: hidden;
+    position: absolute;
+}
+
+#mcqueen-sound{
+    visibility: hidden;
+    position: absolute;
+}
+
+#battle-sound{
+    visibility: hidden;
+    position: absolute;
+}
+
+#troll-sound{
+    visibility: hidden;
+    position: absolute;
+}
+
+#food-sound{
     visibility: hidden;
     position: absolute;
 }
