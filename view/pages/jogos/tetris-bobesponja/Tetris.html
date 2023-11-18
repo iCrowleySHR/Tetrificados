@@ -24,10 +24,66 @@
             font-family: 'Bob esponja', Verdana, sans-serif;
     
         }
+           html,body{
+  height:100%;
+}
+body{
+  text-align:center;
+}
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+button{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Bob esponja';
+    border-radius: 10px;
+
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+  border-radius: 10px;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+  border-radius: 10px;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+  border-radius: 10px;
+}
+
 
          a {
 
-                background-color: #04AA6D;
+                
     border: none;
     color: white;
     padding: 10px 15px;
@@ -35,8 +91,7 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
-    font-family: 'Bob esponja';
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
     
             }
 
@@ -402,17 +457,17 @@
             this.getSpeed = function () {
 
                 switch (level) {
-                    case 0: return 500;
-                    case 1: return 450;
-                    case 2: return 400;
-                    case 3: return 350;
-                    case 4: return 300;
-                    case 5: return 250;
-                    case 6: return 200;
-                    case 7: return 150;
-                    case 8: return 100;
-                    case 9: return 50;
-                    default: return 50;
+                    case 0: return 230;
+                    case 1: return 150;
+                    case 2: return 100;
+                    case 3: return 90;
+                    case 4: return 80;
+                    case 5: return 70;
+                    case 6: return 60;
+                    case 7: return 50;
+                    case 8: return 40;
+                    case 9: return 30;
+                    default: return 30;
                 }
             }
             
@@ -639,7 +694,7 @@
     </script>
      <div>
      <img src="img/logoBob.png" width="230px"><br><br>
-    <a href="index.html">VOLTAR</a>
+    <a href="index.html"><button>VOLTAR</button></a>
     </div>
 
 

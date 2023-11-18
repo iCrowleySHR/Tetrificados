@@ -28,70 +28,84 @@ document.addEventListener('DOMContentLoaded', function () {
         'btn-1': {
             img: "view/img/battle-tetris.png",
             title: "Battle Tetris",
-            description: "<strong>Feito por:</strong> Gustavo Gualda, João Paulo e João Luiz"
+            description: "<strong>Feito por:</strong> Gustavo Gualda, João Paulo e João Luiz<br>"+
+            "Batalhe com um amigo, podendo escolher diversas músicas para acompanhar sua batalha "+
+            "e diversos fundos também!"
         },
 
          // Bob Esponja Tetris
          'btn-2': {
             img: "view/img/tetris-bobesponja.png",
             title: "Bob Esponja Tetris",
-            description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e Fabiola"
+            description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e Fabiola<br>"+
+            "Venha jogar na fenda do bikini, com três modos diferentes repletos de designs incríveis e pura diversão!"
         },
 
         // Mario Tetris
         'btn-3': {
             img: "view/img/battle-tetris.png",
             title: "Mario Tetris",
-            description: "<strong>Feito por:</strong> Myrela, Nicoli, Leonardo e Patrick"
+            description: "<strong>Feito por:</strong> Myrela, Nicoli, Leonardo e Patrick<br>"+
+            "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
+            "Dúvido você ganhar o modo Bowser!"
         },
         
         // One piece tetris
         'btn-4': {
             img: "view/img/battle-tetris.png",
             title: "One Piece Tetris",
-            description: "<strong>Feito por:</strong> Nicole, Maria Clara e Raissa"
+            description: "<strong>Feito por:</strong> Nicole, Maria Clara e Raissa<br>"+
+            "Venha embarcar em uma jornada com diversos desafios, e conquiste cada um deles!"
         },
 
         // Barbie Tetris
         'btn-5': {
             img: "view/img/battle-tetris.png",
             title: "Barbie Tetris",
-            description: "<strong>Feito por:</strong> Gisele, Brenda, Kauany e Kírya"
+            description: "<strong>Feito por:</strong> Gisele, Brenda, Kauany e Kírya<br>"+
+            "Venha conhecer a BarbieLândia com o Tetris da Barbie! <br>Fique ligado e presta atenção, "+
+            "meu Tetris é diferente sou muito exigente!"
         },
 
         // Food Tetris
         'btn-6': {
             img: "view/img/food-tetris.png",
             title: "Food Tetris",
-            description: "<strong>Feito por:</strong> Gustavo Sachetto, Gustavo Lima, Kaue e Erick"
+            description: "<strong>Feito por:</strong> Gustavo Sachetto, Gustavo Lima, Kaue e Erick<br>"+
+            "Está com fome? Venha saborear esse Tetris, e se deliciar com a diversão!"
         },
 
         // Windows XP Tetris 
         'btn-7': {
             img: "view/img/battle-tetris.png",
             title: "Windows XP Tetris",
-            description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro"
+            description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro<br>"+
+            "Você tem sede de nostálgia? Aqui é o lugar certo! Jogue o Tetris do Windows XP agora mesmo!S2"
         },
+        
         
         // McQueen Tetris 
         'btn-8': {
             img: "view/img/battle-tetris.png",
             title: "McQueen Tetris",
-            description: "<strong>Feito por:</strong> Júlio, Sales, Jhonatas e Ana Júlia"
+            description: "<strong>Feito por:</strong> Júlio, Sales, Jhonatas e Ana Júlia<br>"+
+            "Venha correr e se divertir na Copa Pistão! Katchau!"
         },
         
         // Naruto Tetris 
         'btn-9': {
             img: "view/img/tetris-naruto.png",
             title: "Naruto Tetris",
-            description: "<strong>Feito por:</strong> Lara e Silvia"
+            description: "<strong>Feito por:</strong> Lara e Silvia<br>"+
+            "Recarregue seu Chakra e venha jogar esse Tetris nível ninja! Dúvido você sobreviver ao Sharingan!"
         },
 
          // Tetris Troll
          'btn-10': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/tetris-troll.png",
             title: "Tetris Troll",
-            description: "<strong>Feito por:</strong> Lucas, Richard e Ryan"
+            description: "<strong>Feito por:</strong> Lucas, Richard e Ryan<br>"+
+            "Será você capaz de sobreviver ao Tetris mais fácil? PS: Cuidado com as peças malucas"
         },
     }
 
@@ -184,6 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
             descJogos.innerHTML = projetos[button.id]['description'];
 
             if (button.id === 'btn-1') {
+                
                 battleSound();
             } else if (button.id === 'btn-2') {
                 bobSound();
