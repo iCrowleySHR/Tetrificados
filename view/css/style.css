@@ -120,7 +120,7 @@ aside {
 
     }
     100%{
-        transform: rotate(10deg) scale(3);
+        transform: rotate(10deg) scale(2);
         left: 30px;
 
     }

@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
             "Dúvido você ganhar o modo Bowser!",
             music:"view/sounds/mario.mp3",
-            imgIcon:"/view/img/mario.png"
+            imgIcon:"/view/img/mario-logo.png"
         },  
         
         // One piece tetris
@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "<strong>Feito por:</strong> Gustavo Sachetto, Gustavo Lima, Kaue e Erick<br>"+
             "Está com fome? Venha saborear esse Tetris, e se deliciar com a diversão!",
             music:"view/sounds/food.mp3",
+            imgIcon:"view/img/food-tetris-logo.png"
         },
 
         // Windows XP Tetris 
@@ -84,7 +85,8 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Windows XP Tetris",
             description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro<br>"+
             "Você tem sede de nostálgia? Aqui é o lugar certo! Jogue o Tetris do Windows XP agora mesmo!S2",
-            music:"view/sounds/windows-xp.mp3"
+            music:"view/sounds/windows-xp.mp3",
+            imgIcon:"view/img/img-windowsxp.webp"
         },
         
         
@@ -104,7 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Naruto Tetris",
             description: "<strong>Feito por:</strong> Lara e Silvia<br>"+
             "Recarregue seu Chakra e venha jogar esse Tetris nível ninja! Dúvido você sobreviver ao Sharingan!",
-            music:"view/sounds/naruto.mp3"
+            music:"view/sounds/naruto.mp3",
+            imgIcon:"view/img/naruto-logo.png"
         },
 
          // Tetris Troll
@@ -113,7 +116,8 @@ document.addEventListener('DOMContentLoaded', function () {
             title: "Tetris Troll",
             description: "<strong>Feito por:</strong> Lucas, Richard e Ryan<br>"+
             "Será você capaz de sobreviver ao Tetris mais fácil? PS: Cuidado com as peças malucas",
-            music:"view/sounds/troll.mp3"
+            music:"view/sounds/troll.mp3",
+            imgIcon:"view/img/troll-logo.webp"
         },
     }
 
@@ -131,7 +135,9 @@ document.addEventListener('DOMContentLoaded', function () {
             titleJogos.innerHTML = projetos[button.id]['title'];
             descJogos.innerHTML = projetos[button.id]['description'];
             audioFundo.src= projetos[button.id]['music'];
+            audioFundo.volume=0.3
             audioFundo.play()
+
             
 
             imgIcon.classList.add('imgIconBtn')
