@@ -19,16 +19,13 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   transition: 700ms;
-  margin-top: 10%;
+  margin: 20px;
 }
 
 .button-85:hover {
   cursor: pointer;
   width: 200px;
   height: 110px;
-  
-  
- 
 }
 
 .button-85:before {

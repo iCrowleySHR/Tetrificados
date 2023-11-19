@@ -32,6 +32,14 @@ body {
     color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.btn-primeiraPage > a{
+    padding: 23px 10px 23px 10px;
+    text-decoration: none;
+}
+
+.btn-primeiraPage > a:hover{
+    padding: 27px 15px 27px 15px;
+}
 
 
 * {
