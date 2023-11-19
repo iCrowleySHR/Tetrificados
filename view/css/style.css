@@ -62,6 +62,7 @@ aside {
     margin-bottom: 50px;
     direction: rtl;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .scroll::-webkit-scrollbar {
@@ -97,9 +98,32 @@ aside {
     transition: 100ms linear;
 }
 
-.scroll:hover :not(:hover) {
+.scroll:hover:not(:hover),.imgLogoTetris:hover:not(:hover) {
     opacity: 30%;
     transform: scale(0.95);
+}
+
+
+.imgIconBtn{
+    display: flex;
+    position: absolute;
+    width: 50px;
+    left: 20px;
+    bottom: 15px;
+    animation: imgIcon 1s ease-in-out ;
+    transition: 200ms;
+    animation-fill-mode: forwards;
+}
+@keyframes imgIcon {
+    0%{
+        transform: scale(1.0);
+
+    }
+    100%{
+        transform: rotate(10deg) scale(3);
+        left: 30px;
+
+    }
 }
 
 .gradiente {
@@ -138,6 +162,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    position: relative;
 }
 
 .btn-open:hover, .btn-open:focus {
@@ -301,8 +326,8 @@ aside {
 
 .texto-jogos {
     display: flex;
-    margin-top: 25px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
     border-radius: 15px;
     max-width: 750px;
     width: 100%;
@@ -326,55 +351,6 @@ aside {
     margin-left: 10px;
 }
 
-#mario-sound{
-    visibility: hidden;
-    position: absolute;
-}
-
-#barbie-sound{
-    visibility: hidden;
-    position: absolute;
-}
-
-#bob-sound{
-    visibility: hidden;
-    position: absolute;
-}
-
-#one-piece-sound{
-    visibility: hidden;
-    position: absolute;
-}
-
-#windows-xp-sound{
-    visibility: hidden;
-    position: absolute;
-}
-
-#naruto-sound{
-    visibility: hidden;
-    position: absolute;
-}
-
-#mcqueen-sound{
-    visibility: hidden;
-    position: absolute;
-}
-
-#battle-sound{
-    visibility: hidden;
-    position: absolute;
-}
-
-#troll-sound{
-    visibility: hidden;
-    position: absolute;
-}
-
-#food-sound{
-    visibility: hidden;
-    position: absolute;
-}
 
 footer {
     width: 100%;
