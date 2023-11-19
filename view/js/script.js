@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
             imgIcon:"view/img/bob-logo.gif"
         },
 
-        // Mario Tetris
+        // Mario Word Tetris
         'btn-3': {
             img: "view/img/tetris-mario.png",
-            title: "Mario Tetris",
+            title: "Mario Word Tetris",
             description: "<strong>Feito por:</strong> Myrela, Nicoli, Leonardo e Patrick<br>"+
             "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
             "Dúvido você ganhar o modo Bowser!",
@@ -119,6 +119,18 @@ document.addEventListener('DOMContentLoaded', function () {
             music:"view/sounds/troll.mp3",
             imgIcon:"view/img/troll-logo.webp"
         },
+
+         // Mario Bros Tetris
+         'btn-11': {
+            img: "view/img/battle-tetris.png",
+            title: "Mario Bros Tetris",
+            description: "<strong>Feito por:</strong>Cauã, Gabriel e Daniel<br>"+
+            "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
+            "Dúvido você ganhar o modo Bowser!",
+            music:"view/sounds/super-mario.mp3",
+            imgIcon:"view/img/mario2-icon.gif"
+        },  
+        
     }
 
 
