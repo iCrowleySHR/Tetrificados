@@ -300,6 +300,18 @@ aside {
     transition: all 150ms ease-in-out;
 }
 
+#btn-11 {
+    box-shadow: 0 0 10px 0 #f06c5d inset, 0 0 10px 4px #f06c5d;
+}
+
+#btn-11:hover {
+    border-color: #f06c5d;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #f06c5d inset, 0 0 0 0 #f06c5d;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
 .infos-img {
     height: auto;
     display: flex;
