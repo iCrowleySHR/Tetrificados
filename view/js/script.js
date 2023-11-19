@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e Fabiola<br>"+
             "Venha jogar na fenda do bikini, com três modos diferentes repletos de designs incríveis e pura diversão!",
             music:"view/sounds/bob-esponja.mp3",
-            imgIcon:"/view/img/bob-logo.gif"
+            imgIcon:"view/img/bob-logo.gif"
         },
 
         // Mario Tetris
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
             "Dúvido você ganhar o modo Bowser!",
             music:"view/sounds/mario.mp3",
-            imgIcon:"/view/img/mario-icon.gif"
+            imgIcon:"view/img/mario-icon.gif"
         },  
         
         // One piece tetris

@@ -24,6 +24,12 @@ body {
     width: 100%;
 }
 
+.primeiraPagina > p {
+    font-size: 20px;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 
 * {
     font-family: 'Raleway', sans-serif;
@@ -316,12 +322,6 @@ aside {
     width: 100%;
     border-radius: 15px;
     box-shadow: 2px 2px 6px #ffffffbd;
-}
-
-.primeiraPagina > p {
-    font-size: 20px;
-    color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .texto-jogos {
