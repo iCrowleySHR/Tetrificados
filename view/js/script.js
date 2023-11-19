@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro<br>"+
             "Você tem sede de nostálgia? Aqui é o lugar certo! Jogue o Tetris do Windows XP agora mesmo!S2",
             music:"view/sounds/windows-xp.mp3",
-            imgIcon:"view/img/img-windowsxp.webp"
+            imgIcon:"view/img/img-windowsxp.gif"
         },
         
         
