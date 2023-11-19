@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Mario Word Tetris
         'btn-3': {
             img: "view/img/tetris-mario.png",
-            title: "Mario Word Tetris",
+            title: "Mario World Tetris",
             description: "<strong>Feito por:</strong> Myrela, Nicoli, Leonardo e Patrick<br>"+
             "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
             "Dúvido você ganhar o modo Bowser!",
@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
          // Mario Bros Tetris
          'btn-11': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/tetris-mario-bros",
             title: "Mario Bros Tetris",
             description: "<strong>Feito por:</strong>Cauã, Gabriel e Daniel<br>"+
             "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
