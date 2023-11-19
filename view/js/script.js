@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Mario Tetris
         'btn-3': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/tetris-mario.png",
             title: "Mario Tetris",
             description: "<strong>Feito por:</strong> Myrela, Nicoli, Leonardo e Patrick<br>"+
             "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Windows XP Tetris 
         'btn-7': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/tetris-windowsxp.png",
             title: "Windows XP Tetris",
             description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro<br>"+
             "Você tem sede de nostálgia? Aqui é o lugar certo! Jogue o Tetris do Windows XP agora mesmo!S2",
