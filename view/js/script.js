@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "<strong>Feito por:</strong> Gustavo Sachetto, Gustavo Lima, Kaue e Erick<br>"+
             "Está com fome? Venha saborear esse Tetris, e se deliciar com a diversão!",
             music:"view/sounds/food.mp3",
-            imgIcon:"view/img/food-tetris-logo.png"
+            imgIcon:"view/img/food-tetris-logo.gif"
         },
 
         // Windows XP Tetris 
