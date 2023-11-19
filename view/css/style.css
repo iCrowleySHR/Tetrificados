@@ -87,7 +87,8 @@ aside {
 }
 
 .scroll::-webkit-scrollbar-thumb {
-    background-color: blue;
+
+    background-color: #209CCE;
     /* color of the scroll thumb */
     border-radius: 20px;
     /* roundness of the scroll thumb */
