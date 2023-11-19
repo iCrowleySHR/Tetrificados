@@ -108,10 +108,14 @@ aside {
     text-decoration: none;
     transition: 100ms linear;
 }
-
-.scroll:hover:not(:hover),.imgLogoTetris:hover:not(:hover) {
+.scroll:hover :not(:hover){
     opacity: 30%;
     transform: scale(0.95);
+}
+
+.scroll:hover .imgIconBtn {
+    opacity: 1;
+    transform: scale(1);
 }
 
 
@@ -124,6 +128,8 @@ aside {
     animation: imgIcon 1s ease-in-out ;
     transition: 200ms;
     animation-fill-mode: forwards;
+    opacity: 1;
+    transform: scale(1);
 }
 @keyframes imgIcon {
     0%{
