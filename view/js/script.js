@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e Fabiola<br>"+
             "Venha jogar na fenda do bikini, com três modos diferentes repletos de designs incríveis e pura diversão!",
             music:"view/sounds/bob-esponja.mp3",
-            imgIcon:"/view/img/bob.png"
+            imgIcon:"/view/img/bob-logo.gif"
         },
 
         // Mario Tetris
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
             "Dúvido você ganhar o modo Bowser!",
             music:"view/sounds/mario.mp3",
-            imgIcon:"/view/img/mario-logo.png"
+            imgIcon:"/view/img/mario-icon.gif"
         },  
         
         // One piece tetris
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "<strong>Feito por:</strong> Nicole, Maria Clara e Raissa<br>"+
             "Venha embarcar em uma jornada com diversos desafios, e conquiste cada um deles!",
             music:"view/sounds/one-piece.mp3",
-            imgIcon:"view/img/onepiece.png"
+            imgIcon:"view/img/onepiece-icon.gif"
         },  
 
         // Barbie Tetris
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "Venha conhecer a BarbieLândia com o Tetris da Barbie! <br>Fique ligado e presta atenção, "+
             "meu Tetris é diferente sou muito exigente!",
             music:"view/sounds/barbie.mp3",
-            imgIcon:"view/img/barbie.png"
+            imgIcon:"view/img/barbie-icon.gif"
         },
 
         // Food Tetris
@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "<strong>Feito por:</strong> Lara e Silvia<br>"+
             "Recarregue seu Chakra e venha jogar esse Tetris nível ninja! Dúvido você sobreviver ao Sharingan!",
             music:"view/sounds/naruto.mp3",
-            imgIcon:"view/img/naruto-logo.png"
+            imgIcon:"view/img/naruto-icon.gif"
         },
 
          // Tetris Troll
