@@ -14,6 +14,9 @@ class conexao{
         }
     }
 
+    public function oi(){
+        echo"oiii";
+    }
     
 }
 
