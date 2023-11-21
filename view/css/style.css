@@ -41,9 +41,9 @@ body {
 }
 
 
-* {
-    font-family: 'Raleway', sans-serif;
-}
+ * {
+    font-family: 'Raleway', sans-serif, face;
+} 
 
 main {
     display: none;
@@ -368,7 +368,11 @@ aside {
     flex-direction: column;
 }
 
-
+.primeiraPagina > .img-altura{
+    margin-top: -150px;
+    margin-bottom: 150px;
+  }
+  
 .texto-jogos>h2 {
     font-size: 32px;
     margin: 20px 0 5px 0;

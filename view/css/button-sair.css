@@ -1,0 +1,128 @@
+
+.button-voltar {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 8.5em;
+    height: 2.9em;
+    border: #ffffff 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+    margin: 20px;  
+    margin-right: 90%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    
+  }
+  
+  .button-voltar:hover {
+    background-color: #ffffff;
+    color: #000
+  }
+  
+  .button-voltar svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+    transform: rotate(180deg);
+
+  }
+  
+  .button-voltar:hover svg {
+    transform: translateX(5px);
+    transform: rotate(180deg);
+
+  }
+  
+  .text-voltar {
+    margin: 0 1.5em
+  }
+
+/* BOTAO BOB ESPONJA */
+
+
+.button-voltar-bob {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 8.5em;
+    height: 2.9em;
+    border: #ffffff 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+    margin: 30px;  
+    margin-right: 90%;
+    margin-top: 10%;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    
+  }
+  
+  .button-voltar-bob:hover {
+    background-color: #ffffff;
+    color: #000
+  }
+  
+  .button-voltar-bob svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+    transform: rotate(180deg);
+
+  }
+  
+  .button-voltar-bob:hover svg {
+    transform: translateX(5px);
+    transform: rotate(180deg);
+
+  }
+  
+
+/* BOTAO FOOD */
+.button-voltar-food {
+    background-color: #00000000;
+    color: rgb(0, 0, 0);
+    width: 8.5em;
+    height: 2.9em;
+    border: #000000 0.2em solid;
+    border-radius: 11px;
+    text-align: right;
+    transition: all 0.6s ease;
+    margin: 20px;  
+    margin-right: 90%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    
+    
+  }
+  
+  .button-voltar-food:hover {
+    background-color: #000;
+    color: rgb(255, 255, 255)
+  }
+  
+  .button-voltar-food svg {
+    width: 1.6em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+    transform: rotate(180deg);
+
+  }
+  
+  .button-voltar-food:hover svg {
+    transform: translateX(5px);
+    transform: rotate(180deg);
+
+  }
+  

@@ -139,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let primeiraPagina = document.querySelector('.primeiraPagina')
         primeiraPagina.style.display='none'
         main.style.display='flex'
+        
     })
 
     buttons.forEach(button => {
