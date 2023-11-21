@@ -378,7 +378,13 @@ aside {
 .texto-jogos>p {
     font-size: 19px;
     margin-top: 10px;
+    margin-bottom: 0;
     margin-left: 10px;
+}
+
+p > a{
+    margin-top: -500px;
+    color: white;
 }
 
 
