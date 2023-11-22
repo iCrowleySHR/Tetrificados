@@ -14,8 +14,12 @@ class conexao{
         }
     }
 
-    public function oi(){
-        echo"oiii";
+    public function insereValores($cadNome, $cadNota, $cadCompl){
+        $insereValores = $this -> pdo -> prepare ("insert into feedBack(nome, nota, compl) values(:nome,:nota,:compl);");
+        $insereValores -> bindValue(":nome", $cadNome);
+        $insereValores -> bindValue(":nota", $cadNota);
+        $insereValores -> bindValue(":compl", $cadCompl);
+        $insereValores->execute();
     }
     
 }
