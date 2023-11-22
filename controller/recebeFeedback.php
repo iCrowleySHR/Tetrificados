@@ -10,7 +10,7 @@
 
         $conexao -> insereValores($cadNome, $cadNota, $cadCompl);
 
-        echo ' 
+        echo '
         <script>
             Swal.fire({
                 title: "FeedBack recebido!",
@@ -22,6 +22,8 @@
                 confirmButtonColor: "#0dca36"
             });
         </script> 
-        ';
+            ';
+        echo '<meta http-equiv="refresh" content="2;url=../../index.html">';
+       
     }
 ?>
