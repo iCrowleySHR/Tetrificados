@@ -12,7 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 300ms;
-    zoom: 1;
+    zoom: 0.90;
     height: 90vh;
     color: white;
 }
@@ -22,6 +22,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
 }
 
 .logo {
@@ -37,6 +38,7 @@ form {
     width: 520px;
     font-size: 19px;
     box-shadow: -5px 4px 12px #ffffff70;
+    margin-bottom: 200px;
 }
 
 form h2 {

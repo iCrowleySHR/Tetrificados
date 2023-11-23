@@ -10,8 +10,10 @@ body {
     transition: 300ms;
     zoom: 1;
     height: 90vh;
-
+    font-family: 'Raleway', sans-serif;
 }
+
+
 
 .primeiraPagina{
     display: flex;

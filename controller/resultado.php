@@ -3,18 +3,37 @@
      $config = parse_ini_file(__DIR__.'/../model/config.ini');
      $conexao = new conexao ($config['dbname'], $config['host'], $config['user'], $config['password']);
  
-    $sql = 'SELECT * FROM feedback';    /*Recebe o codigo sql para fazer a busca */
-    $pdo = $conexao -> getPDO();        /* Entra no arquivo conexão e retorna a função getPDO */
-    $consultaSQL = $pdo->query($sql);   /*Busca no banco a variavel sql */
+    $sql = 'SELECT * FROM feedback'; 
+    $pdo = $conexao -> getPDO();     
+    $consultaSQL = $pdo->query($sql);   
+
+    $contador = 0;
+    $totalDecoracao = 0;
+    $totalGeral = 0;
+    $totalJogos = 0;
+    $totalOrganizacao = 0;
+    $totalApresentacao = 0;
+    $dadosFeedback = [];
 
     while($dados = $consultaSQL->fetch(PDO::FETCH_ASSOC)){
-        echo $dados['nome'];
-        echo $dados['notaGeral'];
-        echo $dados['notaJogos'];
-        echo $dados['notaOrganizacao'];
-        echo $dados['notaApresentacao'];
-        echo $dados['notaDecoracao'];
-        echo $dados['compl'];
-        echo $dados['codFeed'];
-    }   
+        $dadosFeedback[] = $dados;  // guarda em uma array, so pode rodar uma vez o while
+        $totalDecoracao += $dados['notaDecoracao'];
+        $totalGeral += $dados['notaGeral'];
+        $totalJogos += $dados['notaJogos'];
+        $totalOrganizacao += $dados['notaOrganizacao'];
+        $totalApresentacao += $dados['notaApresentacao'];
+        $contador++;
+    }
+
+    $mediaDecoracao = $totalDecoracao / $contador;
+    $mediaGeral = $totalGeral / $contador;
+    $mediaOrganizacao = $totalOrganizacao / $contador;
+    $mediaJogos = $totalJogos / $contador;
+    $mediaApresentacao = $totalApresentacao / $contador;
+
+    $mediaDecoracaoFormatada = number_format($mediaDecoracao, 2); // Duas casas decimais
+    $mediaGeralFormatada = number_format($mediaGeral, 2);
+    $mediaOrganizacaoFormatada = number_format($mediaOrganizacao, 2);
+    $mediaJogosFormatada = number_format($mediaJogos, 2);
+    $mediaApresentacaoFormatada = number_format($mediaApresentacao, 2);
 ?>
