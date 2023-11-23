@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'btn-9': {
             img: "view/img/tetris-naruto.png",
             title: "Naruto Tetris",
-            description: "<strong>Feito por:</strong> Lara e Silvia<br>"+
+            description: "<strong>Feito por:</strong> Lara, Silvia, Isabela e Julia<br>"+
             "Recarregue seu Chakra e venha jogar esse Tetris nível ninja! Dúvido você sobreviver ao Sharingan!",
             music:"view/sounds/naruto.mp3",
             imgIcon:"view/img/naruto-icon.gif"
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
             img: "view/img/tetris-mario-bros",
             title: "Mario Bros Tetris",
             description: "<strong>Feito por:</strong>Cauã, Gabriel e Daniel<br>"+
-            "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
+            "Venha se aventurar nesse gigantesto mundo cheio de personagens carismaticos!<br>"+
             "Dúvido você ganhar o modo Bowser!",
             music:"view/sounds/super-mario.mp3",
             imgIcon:"view/img/mario2-icon.gif"
