@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // One piece tetris
         'btn-4': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/tetris-onepiece.png",
             title: "One Piece Tetris",
             description: "<strong>Feito por:</strong> Nicole, Maria Clara e Raissa<br>"+
             "Venha embarcar em uma jornada com diversos desafios, e conquiste cada um deles!",
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Barbie Tetris
         'btn-5': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/tetris-barbie.png",
             title: "Barbie Tetris",
             description: "<strong>Feito por:</strong> Gisele, Brenda, Kauany e Kírya<br>"+
             "Venha conhecer a BarbieLândia com o Tetris da Barbie! <br>Fique ligado e presta atenção, "+
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // McQueen Tetris 
         'btn-8': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/tetris-mcqueen.png",
             title: "McQueen Tetris",
             description: "<strong>Feito por:</strong> Júlio, Sales, Jhonatas e Ana Júlia<br>"+
             "Venha correr e se divertir na Copa Pistão! Katchau!",
@@ -124,9 +124,9 @@ document.addEventListener('DOMContentLoaded', function () {
          'btn-11': {
             img: "view/img/tetris-mario-bros.png",
             title: "Mario Bros Tetris",
+ 
             description: "<strong>Feito por:</strong>Cauã, Gabriel e Daniel<br>"+
-            "Venha se aventurar nesse gigantesto mundo cheio de personagens carismaticos!<br>"+
-            "Dúvido você ganhar o modo Bowser!",
+            "Venha conhecer o incrível mundo de Mario Bros e seus amigos!<br>",
             music:"view/sounds/super-mario.mp3",
             imgIcon:"view/img/mario2-icon.gif"
         },  
