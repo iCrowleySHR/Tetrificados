@@ -463,7 +463,8 @@ footer a {
     background: #ff0000;
   }
 
-@media screen and (max-width:1226px) {
+
+@media screen and (max-width:1475px) {
     html,body{
         zoom: 0.70;
     }
