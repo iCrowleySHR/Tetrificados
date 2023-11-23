@@ -14,14 +14,23 @@ class conexao{
         }
     }
 
-    public function insereValores($cadNome, $cadNota, $cadCompl){
-        $insereValores = $this -> pdo -> prepare ("insert into feedBack(nome, nota, compl) values(:nome,:nota,:compl);");
-        $insereValores -> bindValue(":nome", $cadNome);
-        $insereValores -> bindValue(":nota", $cadNota);
-        $insereValores -> bindValue(":compl", $cadCompl);
+    public function insereValores($cadNome, $cadNotaGeral, $cadNotaJogo, $cadNotaOrganizacao,$cadNotaApresentacao, $cadNotaDecoracao, $cadCompl){
+        $insereValores = $this -> pdo -> prepare ("insert into feedBack(nome,notaGeral, notaJogos,notaOrganizacao,notaApresentacao, notaDecoracao,compl)
+        values(:n, :g, :j, :o, :a, :d, :c)");
+
+        $insereValores -> bindValue(":n", $cadNome);
+        $insereValores -> bindValue(":g", $cadNotaGeral);
+        $insereValores -> bindValue(":j", $cadNotaJogo);
+        $insereValores -> bindValue(":o", $cadNotaOrganizacao);
+        $insereValores -> bindValue(":a", $cadNotaApresentacao);
+        $insereValores -> bindValue(":d", $cadNotaDecoracao);
+        $insereValores -> bindValue(":c",$cadCompl);
         $insereValores->execute();
     }
     
+    public function getPDO() {
+        return $this->pdo;
+    }
 }
 
 ?>

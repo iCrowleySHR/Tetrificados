@@ -5,10 +5,15 @@
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $cadNome = addslashes($_POST['nome']);
-        $cadNota = addslashes($_POST['nota']);
+        $cadNotaGeral = addslashes($_POST['nota-geral']);
+        $cadNotaJogo = addslashes($_POST['nota-jogo']);
+        $cadNotaOrganizacao = addslashes($_POST['nota-organizacao']);
+        $cadNotaApresentacao = addslashes($_POST['nota-apresentacao']);
+        $cadNotaDecoracao = addslashes($_POST['nota-decoracao']);
         $cadCompl = addslashes($_POST['complemento']);
 
-        $conexao -> insereValores($cadNome, $cadNota, $cadCompl);
+        $conexao -> insereValores($cadNome, $cadNotaGeral, $cadNotaJogo, $cadNotaOrganizacao
+                                    ,$cadNotaApresentacao, $cadNotaDecoracao, $cadCompl);
 
         echo '
         <script>
