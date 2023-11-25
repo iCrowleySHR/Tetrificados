@@ -10,12 +10,12 @@
   font-size: 40px;
   font-weight: 400;
   font-family: 'face';
-  width: 13rem;
+  width: 16rem;
   height: 5.5rem;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
-  background: #111;
+  background: transparent;
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -31,8 +31,8 @@
 
 .button-85:hover {
   cursor: pointer;
-  width: 200px;
-  height: 110px;
+  width: 17rem;
+  height: 6rem;
   border-radius: 50px;
 }
 

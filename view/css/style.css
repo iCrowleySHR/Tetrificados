@@ -23,6 +23,10 @@ body {
     flex-direction: column;
 }
 
+.btn-jogar{
+    padding: 23px 20px 23px 20px;
+}
+
 .primeiraPagina > img{
     max-width: 500px;
     width: 100%;
@@ -66,7 +70,7 @@ aside {
 
 .logo {
     width: 300px;
-    margin-left: 55px;
+    margin-left: 70px;
 }
 
 .scroll {
@@ -127,6 +131,31 @@ aside {
     transform: scale(1);
 }
 
+.seta-texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.setaBaixo{
+    width: 40px;
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+.setaCima{
+    margin-top: 45px;
+    margin-bottom: -10px;
+    width: 40px;
+    transform: rotate(180deg);
+    filter: drop-shadow(0px 0px 5px white);
+
+}
 
 .imgIconBtn{
     display: flex;
@@ -152,16 +181,6 @@ aside {
     }
 }
 
-.gradiente {
-    
-    height: 15em;
-    margin-top: -300px;
-    margin-right: 40px;
-    background: rgb(0, 0, 0);
-    pointer-events: none;
-    /*Os eventos do cursor funciona mesmo com uma div em cima*/
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 23%, rgba(114, 35, 143, 0) 68%);
-}
 .btn-open {
     box-sizing: border-box;
     -webkit-appearance: none;
@@ -336,6 +355,7 @@ aside {
     width: 100%;
     min-width: 450px;
     margin-right: 50px;
+    margin-top: 25px;
     flex-direction: column;
 }
 

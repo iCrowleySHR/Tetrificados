@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let btnJogar = document.querySelector('.btn-jogar');
     const audioFundo = document.querySelector('#musicaFundo');
     let imgIcon = document.createElement('img')
-
+    let scrollButtons = document.querySelector('.scroll')
+    let setaBaixo = document.querySelector('.setaBaixo')
+    let setaCima = document.querySelector('.setaCima')
 
     // Button
     const buttons = document.querySelectorAll('.btn-open');
@@ -133,7 +135,26 @@ document.addEventListener('DOMContentLoaded', function () {
         
     }
 
+    function scrollParaCima(){
+        scrollButtons.scroll({
+            top: -450,
+            behavior: "smooth"
+        })
+    }
 
+    function scrollParaBaixo(){
+        scrollButtons.scroll({
+            top: 450,
+            behavior: "smooth"
+        })
+    }
+    setaBaixo.addEventListener('click', ()=>{
+        scrollParaBaixo()
+    })
+
+    setaCima.addEventListener('click', ()=>{
+        scrollParaCima()
+    })
 
     btnJogar.addEventListener('click',()=>{
         let primeiraPagina = document.querySelector('.primeiraPagina')
