@@ -4,8 +4,7 @@
      $conexao = new conexao ($config['dbname'], $config['host'], $config['user'], $config['password']);
  
     $sql = 'SELECT * FROM feedback'; 
-    $pdo = $conexao -> getPDO();     
-    $consultaSQL = $pdo->query($sql);   
+    $resultados = $conexao -> consultaBanco($sql);
 
     $contador = 0;
     $totalDecoracao = 0;
@@ -13,10 +12,8 @@
     $totalJogos = 0;
     $totalOrganizacao = 0;
     $totalApresentacao = 0;
-    $dadosFeedback = [];
 
-    while($dados = $consultaSQL->fetch(PDO::FETCH_ASSOC)){
-        $dadosFeedback[] = $dados;  // guarda em uma array, so pode rodar uma vez o while
+    foreach($resultados as $dados){
         $totalDecoracao += $dados['notaDecoracao'];
         $totalGeral += $dados['notaGeral'];
         $totalJogos += $dados['notaJogos'];

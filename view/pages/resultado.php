@@ -28,7 +28,7 @@
                 <th>Nota Geral</th>
                 <th>Complemento</th>
             </tr>
-            <?php foreach($dadosFeedback as $dados){?>
+            <?php foreach($resultados as $dados){?>
                 <tr>
                     <td data-th="Jogador Nº">
                         <?php echo $dados['codFeed'];?>

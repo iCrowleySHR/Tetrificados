@@ -28,9 +28,17 @@ class conexao{
         $insereValores->execute();
     }
     
-    public function getPDO() {
-        return $this->pdo;
+    public function consultaBanco($sql){
+        $consultaSQL = $this->pdo->query($sql);
+        $consultaSQL->execute();
+        $resultados = array();
+    
+        while ($dados = $consultaSQL->fetch(PDO::FETCH_ASSOC)) {
+            $resultados[] = $dados;
+        }
+        return $resultados;
     }
+
 }
 
 ?>
