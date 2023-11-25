@@ -169,4 +169,48 @@
 
   }
 
+  /* BOTAO ATUALIZAR TELA INDEX */
+  #btn-atualizar {
+    background-color: #ffffff00;
+    color: #fff;
+    width: 10.5em;
+    height: 3.9em;
+    border: #ffffff 0.2em solid;
+    border-radius: 11px;
+    text-align: left;
+    transition: all 0.6s ease;
+    margin: 20px;  
+    margin-right: 90%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 100;
+    
+  }
   
+  #btn-atualizar:hover {
+    background-color: #ffffff;
+    color: #000
+  }
+  
+  #btn-atualizar svg {
+    width: 2.1em;
+    margin: -0.2em 0.8em 1em;
+    position: absolute;
+    display: flex;
+    transition: all 0.6s ease;
+    transform: rotate(180deg);
+
+  }
+  
+  #btn-atualizar:hover svg {
+    transform: translateX(5px);
+    transform: rotate(180deg);
+
+  }
+  .text-atualizar {
+    font-size: 19px;
+    margin: 0 3.5em
+    
+  }

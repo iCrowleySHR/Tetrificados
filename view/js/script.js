@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let scrollButtons = document.querySelector('.scroll')
     let setaBaixo = document.querySelector('.setaBaixo')
     let setaCima = document.querySelector('.setaCima')
+    let btnAtualizar = document.querySelector('#btn-atualizar')
 
     // Button
     const buttons = document.querySelectorAll('.btn-open');
@@ -185,6 +186,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    btnAtualizar.addEventListener('click', function(){
+        location.reload();
+
+    })
 
 
   
