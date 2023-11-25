@@ -87,7 +87,7 @@
 
 /* BOTAO FOOD */
 .button-voltar-food {
-  background-color: #00000000;
+  background-color: #fd000000;
   color: #00000000;
   width: 8.5em;
   height: 2.9em;
@@ -106,7 +106,7 @@
   }
   
   .button-voltar-food:hover {
-    background-color: #000;
+    background-color: #e43d3d;
     color: rgb(255, 255, 255)
   }
   
