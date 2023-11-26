@@ -3,7 +3,7 @@
      $config = parse_ini_file(__DIR__.'/../model/config.ini');
      $conexao = new conexao ($config['dbname'], $config['host'], $config['user'], $config['password']);
  
-    $sql = 'SELECT * FROM feedback'; 
+    $sql = 'SELECT * FROM feedBack'; 
     $resultados = $conexao -> consultaBanco($sql);
 
     $contador = 0;

@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="../css/resultado.css">
 </head>
 <body>
-    <?php include('../../controller/resultado.php')?>
+<?php include('../../controller/resultado.php');?>
     <main class="container">
         <section>
-            Média Decoração: <h2><?php echo $mediaDecoracaoFormatada?></h2>
-            Média Organização: <h2><?php echo $mediaOrganizacaoFormatada?></h2>
-            Média Jogos: <h2><?php echo $mediaJogosFormatada?></h2>
-            Média Apresentação : <h2><?php echo  $mediaApresentacaoFormatada?></h2>
-            Média Geral : <h2><?php echo  $mediaGeralFormatada?></h2>
+            Média Decoração: <h2><?php echo $mediaDecoracaoFormatada;?></h2>
+            Média Organização: <h2><?php echo $mediaOrganizacaoFormatada;?></h2>
+            Média Jogos: <h2><?php echo $mediaJogosFormatada;?></h2>
+            Média Apresentação : <h2><?php echo  $mediaApresentacaoFormatada;?></h2>
+            Média Geral : <h2><?php echo  $mediaGeralFormatada;?></h2>
         </section>
         <table class="rwd-table">
             <tbody>
@@ -58,6 +58,7 @@
             <?php } ?>
             </tbody>
         </table>
+        
     </main>
 </body>
 </html>
