@@ -18,7 +18,7 @@ body {
     display: inline-block;
 }
 
-div {
+.logo{
     font-size: 25px;
     font-weight: bold;
     font-family: monospace;
@@ -99,7 +99,7 @@ canvas {
     margin-top: 10px;
 }
 
-button {
+button:not(.button-voltar){
     display: block;
     box-sizing: border-box;
     margin: 0 auto;

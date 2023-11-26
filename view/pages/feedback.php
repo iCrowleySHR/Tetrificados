@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tetrificados | FeedBack</title>
     <link rel="stylesheet" href="../css/feed.css">
+    <link rel="stylesheet" href="../css/button-sair.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <main>
+    <a href="../../index.html">
+        <button class="button-voltar">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 rotate">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+            </svg>
+            
+            <div class="text-voltar">
+            Voltar
+            </div>
+        </button>
+    </a>
     <img src="../img/logo.png" alt="" class="logo">
         <form action="" method="post">
             <h2>FeedBack</h2>
