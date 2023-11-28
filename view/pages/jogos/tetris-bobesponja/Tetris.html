@@ -175,7 +175,7 @@ button:hover:before,button:hover:after{
         var smallStroke = 1;//Largura da borda - conjunto
     
 
-
+        var gameInProgress = false;
 
         // position of falling shape
         var fallingShapeRow;//Linha de forma caindo
@@ -280,13 +280,29 @@ button:hover:before,button:hover:after{
         });
 
        // Evento de clique para iniciar um novo jogo
-        addEventListener('click', function () {
-             //musica
-        let audio = document.querySelector('#background-music');
-        audio.play();
-        audio.volume = 0.5;
-            startNewGame();
+       document.body.addEventListener('click', function (event) {  
+        if (scoreboard.isGameOver()) {
+                if (isMouseInsideCanvas(event)) {
+                    let audio = document.querySelector('#background-music');
+                    audio.play();
+                    audio.volume = 0.5;
+                    startNewGame();
+                    gameInProgress = true;
+                }
+            }
         });
+
+        function isMouseInsideCanvas(event) {
+            var rect = canvas.getBoundingClientRect();
+            var mouseX = event.clientX - rect.left;
+            var mouseY = event.clientY - rect.top;
+return (
+                mouseX >= 0 &&
+                mouseX <= rect.width &&
+                mouseY >= 0 &&
+                mouseY <= rect.height
+            );
+        }
 
         addEventListener('keyup', function () {
             keyDown = false;

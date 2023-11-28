@@ -52,6 +52,7 @@
         var criadoY = 600;
         var clickIniciar = '#53aaf1';
         var clickGameOver = 'red';
+        var gameInProgress = false;
 
         var fallingShapeRow;
         var fallingShapeCol;
@@ -104,9 +105,26 @@
             }
         });
 
-        addEventListener('click', function () {
-            startNewGame();
+        document.body.addEventListener('click', function (event) {
+            if (scoreboard.isGameOver()) {
+                if (isMouseInsideCanvas(event)) {
+                    startNewGame();
+                    gameInProgress = true;
+                }
+            }
         });
+
+        function isMouseInsideCanvas(event) {
+            var rect = canvas.getBoundingClientRect();
+            var mouseX = event.clientX - rect.left;
+            var mouseY = event.clientY - rect.top;
+return (
+                mouseX >= 0 &&
+                mouseX <= rect.width &&
+                mouseY >= 0 &&
+                mouseY <= rect.height
+            );
+        }
 
         addEventListener('keyup', function () {
             keyDown = false;
