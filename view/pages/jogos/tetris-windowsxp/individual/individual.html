@@ -11,6 +11,7 @@
 
 </head>
 <body class="fundo">
+  <a href="../index.html" id="backButton" class="btn voltarBtn"><i class="fas fa-arrow-left"></i> Voltar</a>
   <style type="text/css">
   body, html {
       color:rgb(0, 0, 0);
@@ -42,6 +43,32 @@
     background-position: center top; /* Ajuste aqui para cortar a parte superior */
     background-size: cover;
 }
+
+
+#backButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #2f9600b6;
+  color: white;
+  border-radius: 5px;
+  font-weight: 800;
+  border: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.5s;
+  line-height: 15px; /* Ajuste conforme necessário para centralizar verticalmente */
+}
+
+#backButton:hover {
+  background-color: #2f9600;
+  transform: scale(1.1);
+}
+
+
+
 
 .tetris {
   height: 90vh;
@@ -127,6 +154,13 @@
     right: 0px;
     line-height: 10px;
     font-size: 14px;
+   }
+
+   .menuzinho{
+    margin-bottom: 15px;
+    text-decoration: underline;
+    font-size: 19px;
+    font-weight: 900;
    }
 
   .detailsRight {
@@ -239,7 +273,7 @@
         font-weight: 800;
 
     }
-      
+
       .detailsRight {
         height: 80vh;
         width: 120px;
@@ -274,7 +308,7 @@
     <div id="newGame" class="modal">
         <div class="modal-content">
           <h4>Tetris</h4>
-          <div class="voltarBtn btn"><a href="../index.html">Início</a></div>
+          <div class="voltarBtn btn"><a href="../index.html">Voltar</a></div>
           <button onclick="newGame()" id="newGameBtn" class="modal-close waves-effect waves-light btn" style="width:250px">Novo jogo</button>
           </div>
         </div>
@@ -282,7 +316,7 @@
     <div id="pause" class="modal">
         <div class="modal-content">
           <h4>Jogo Pausado!</h4>
-          <div class="voltarBtn btn"><a href="../index.html">Início</a></div>
+          <div class="voltarBtn btn"><a href="../index.html">Voltar</a></div>
           <button onclick="pauseGame()" id="pauseBtn" class="modal-close waves-effect waves-light btn">Continuar!</button><br>
           <button onclick="newGame()" id="StartNewBtn" class="modal-close waves-effect waves-light btn">Começar um novo jogo!</button>
           </div>
@@ -294,18 +328,18 @@
               <div class="yourScore"></div>
               <form id="highScore">
               </form>
-              <div class="voltarBtn btn"><a href="../index.html">Início</a></div>
+              <div class="voltarBtn btn"><a href="../index.html">Voltar</a></div>
               <a onclick="newGame()" class="modal-close waves-effect waves-light btn">Comece um novo jogo!</a>
           </div>
         </div>
-
+        
     <div class="detailsLeft">
-      
+      <div class="menuzinho"> Menu: ESC </div>
       <div class="score"> </div>
       <div class="level"> </div>
       <div class="highScores"> </div>
     </div>
-
+   
     <canvas class="tetris" width="240" height="400"></canvas>
 
     <div class="detailsRight">
@@ -313,7 +347,7 @@
         <br>
         
       </div>  
-  </div>
+  </div> 
 
   <audio src="../individual/audios/erro.mp3" controls id="erro-sound"></audio>
   <audio src="../individual/audios/music.mp3" controls id="music-sound" autoplay></audio>
