@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'btn-6': {
             img: "view/img/food-tetris.gif",
             title: "Food Tetris",
-            description: "<strong>Feito por:</strong> Gustavo Sachetto, Gustavo Lima, Kaue e Erick<br>"+
+            description: "<strong>Feito por:</strong> Gustavo Sachetto"+
             "Está com fome? Venha saborear esse Tetris, e se deliciar com a diversão!",
             music:"view/sounds/food.mp3",
             imgIcon:"view/img/food-tetris-logo.gif"
@@ -127,25 +127,32 @@ document.addEventListener('DOMContentLoaded', function () {
          'btn-11': {
             img: "view/img/mario-bros.gif",
             title: "Mario Bros Tetris",
- 
-            description: "<strong>Feito por:</strong>Cauã, Gabriel e Daniel<br>"+
+            description: "<strong>Feito por:</strong> Cauã, Gabriel e Daniel<br>"+
             "Venha conhecer o incrível mundo de Mario Bros e seus amigos!<br>",
             music:"view/sounds/super-mario.mp3",
             imgIcon:"view/img/mario2-icon.gif"
-        },  
+        },
+        'btn-12':{
+            img: "view/img/retrotetris.gif",
+            title: "Retro Tetris",
+            description: "<strong>Feito por:</strong> Erick, Gustavo Lima e Kauê<br>"+
+            "No momento ainda não tem texto!<br>",
+            music:"view/sounds/retro.mp3",
+            imgIcon:"view/img/retroMatrix.gif"
+        }  
         
     }
 
     function scrollParaCima(){
         scrollButtons.scroll({
-            top: -450,
+            top: -500,
             behavior: "smooth"
         })
     }
 
     function scrollParaBaixo(){
         scrollButtons.scroll({
-            top: 450,
+            top: 500,
             behavior: "smooth"
         })
     }
