@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Battle Tetris
         'btn-1': {
-            img: "view/img/battle-tetris.png",
+            img: "view/img/battle-tetris.gif",
             title: "Battle Tetris",
             description: "<strong>Feito por:</strong> Gustavo Gualda, João Paulo e João Luiz<br>"+
             "Batalhe com um amigo, podendo escolher diversas músicas para acompanhar sua batalha "+
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
          // Bob Esponja Tetris
          'btn-2': {
-            img: "view/img/tetris-bobesponja.png",
+            img: "view/img/bob-esponja.gif",
             title: "Bob Esponja Tetris",
             description: "<strong>Feito por:</strong> Ana Gabrielly, Maria Luisa, Leandro, Luiza e Fabiola<br>"+
             "Venha jogar na fenda do bikini, com três modos diferentes repletos de designs incríveis e pura diversão!",
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Mario Word Tetris
         'btn-3': {
-            img: "view/img/tetris-mario.png",
+            img: "view/img/mario-world.gif",
             title: "Mario World Tetris",
             description: "<strong>Feito por:</strong> Myrela, Nicoli, Leonardo e Patrick<br>"+
             "Venha se aventurar com os três modos de dificuldade no mundo do Mario! Luigi, Mario e Bowser!<br>"+
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // One piece tetris
         'btn-4': {
-            img: "view/img/tetris-onepiece.png",
+            img: "view/img/one-piece.gif",
             title: "One Piece Tetris",
             description: "<strong>Feito por:</strong> Nicole, Maria Clara e Raissa<br>"+
             "Venha embarcar em uma jornada com diversos desafios, e conquiste cada um deles!",
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Barbie Tetris
         'btn-5': {
-            img: "view/img/tetris-barbie.png",
+            img: "view/img/barbie.gif",
             title: "Barbie Tetris",
             description: "<strong>Feito por:</strong> Gisele, Brenda, Kauany e Kírya<br>"+
             "Venha conhecer a BarbieLândia com o Tetris da Barbie! <br>Fique ligado e presta atenção, "+
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Food Tetris
         'btn-6': {
-            img: "view/img/food-tetris.png",
+            img: "view/img/food-tetris.gif",
             title: "Food Tetris",
             description: "<strong>Feito por:</strong> Gustavo Sachetto, Gustavo Lima, Kaue e Erick<br>"+
             "Está com fome? Venha saborear esse Tetris, e se deliciar com a diversão!",
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Windows XP Tetris 
         'btn-7': {
-            img: "view/img/tetris-windowsxp.png",
+            img: "view/img/windowsxp.gif",
             title: "Windows XP Tetris",
             description: "<strong>Feito por:</strong> Miguel, Matheus e Pedro<br>"+
             "Você tem sede de nostálgia? Aqui é o lugar certo! Jogue o Tetris do Windows XP agora mesmo!S2",
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // McQueen Tetris 
         'btn-8': {
-            img: "view/img/tetris-mcqueen.png",
+            img: "view/img/mc-queen.gif",
             title: "McQueen Tetris",
             description: "<strong>Feito por:</strong> Júlio, Sales, Jhonatas e Ana Júlia<br>"+
             "Venha correr e se divertir na Copa Pistão! Katchau!",
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         // Naruto Tetris 
         'btn-9': {
-            img: "view/img/tetris-naruto.png",
+            img: "view/img/naruto.gif",
             title: "Naruto Tetris",
             description: "<strong>Feito por:</strong> Lara, Silvia, Isabela e Julia<br>"+
             "Recarregue seu Chakra e venha jogar esse Tetris nível ninja! Dúvido você sobreviver ao Sharingan!",
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
          // Tetris Troll
          'btn-10': {
-            img: "view/img/tetris-troll.png",
+            img: "view/img/tetris-troll.gif",
             title: "Tetris Troll",
             description: "<strong>Feito por:</strong> Lucas, Richard e Ryan<br>"+
             "Será você capaz de sobreviver ao Tetris mais fácil? PS: Cuidado com as peças malucas",
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
          // Mario Bros Tetris
          'btn-11': {
-            img: "view/img/tetris-mario-bros.png",
+            img: "view/img/mario-bros.gif",
             title: "Mario Bros Tetris",
  
             description: "<strong>Feito por:</strong>Cauã, Gabriel e Daniel<br>"+
