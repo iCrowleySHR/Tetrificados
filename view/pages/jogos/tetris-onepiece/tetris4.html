@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="img/icon-onepiece.png" type="image/x-icon">
-  <title>Tetris One Piece | Zoro</title>
+  <title>Tela 2 Tetris</title>
   <style>
     html, body {
       height: 100%;
@@ -42,20 +41,25 @@
   </style>
 </head>
 <body>
+    
   <!-- Imagem do emblema -->
   <img src="img/rrrr.png" width="300" class="left-image">
-
   <!-- Jogo Snake incorporado -->
   <canvas width="400" height="400" id="game"></canvas>
 
   <!-- Link para a página inicial -->
-  <a id="link-pagina-inicial" href="texte.html"> <img src="img/chopper.png" width="100"></a>
-
+  <h1>
+  <a id="link-pagina-inicial" href="texte.html"> <img src="img/chopper.png" width="100">
+  <br>
+  Voltar
+  </a>
+  </h1>
+   
   <script>
     var canvas = document.getElementById('game');
     var context = canvas.getContext('2d');
 
-    //parte do jogo
+    // O restante do código do jogo Snake permanece o mesmo
     var grid = 16;
     var count = 0;
 
