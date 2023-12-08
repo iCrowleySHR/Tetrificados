@@ -13,8 +13,8 @@ Porém, os colaboradores desse projeto foram: <a href="https://github.com/dartre
 
 ## Funcionalidades
 
-- **Jogos:** Se aventure no mundo dos Tetris!! Nele você pode encontrar uma grande diversidade de jogos! Onde por exemplo, você pode navegar no mundo Tetris na Fenda do Biquini. Ou no mundo do Mario!
-- **Quantidade de jogos:** No nosso projeto existe **12** jogos!
+- **Jogos:** Se aventure no mundo dos Tetris!! Nele você pode encontrar uma grande diversidade de jogos! Onde, por exemplo, você pode navegar no mundo Tetris na Fenda do Biquini. Ou no mundo do Mario!
+- **Quantidade de jogos:** No nosso projeto existem **12** jogos!
 
 ## Tecnologias Utilizadas
 <img src="https://skillicons.dev/icons?i=html,css,js,php">
