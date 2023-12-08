@@ -2,7 +2,7 @@
 ## Visão Geral
 
 <img src="view/img/fotoProjeto.png" style="margin:0 auto;">
-O site Tetrificados foi um desenvolvido para ser a página Home de vários jogos, os jogos foram criados por toda a Sala do 2º Info da Etec Dr. Emílio Hernandez. </br>
+O site Tetrificados foi desenvolvido para ser a página Home de vários jogos, os jogos foram criados por toda a Sala do 2º Info da Etec Dr. Emílio Hernandez do ano de 2023. </br>
 Porém os colaboradores desse projeto foi: <a href="https://github.com/dartres" target="_blank">Brenda Caroline</a>,
             <a href="https://github.com/iCrowleySHR" target="_blank">Gustavo Gualda</a>, 
             <a href="https://github.com/GustavoSachetto" target="_blank">Gustavo Sachetto</a>, 
